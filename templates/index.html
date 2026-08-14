@@ -4,29 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum LAB</title>
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <link rel="stylesheet" href="../static/styles/index.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">  
 </head>
 <body>
     <header>
+
         <div class="logo">
-            <h2>Quantum LAB</h2>
+            <div class="mascote-icon">
+                <img src="#" alt="Mascote Quantum Lab">
+            </div>
+            <h2>Quantum<span class="roxo">LAB</span></h2>
         </div>
-        <div class="links">
+
+        <nav class="links">
             <ul>
-                <li><a>Jornada</a></li>
-                <li><a>Explorar</a></li>
-                <li><a>Mascote</a></li>
+                <li><a href="#">A jornada</a></li>
+                <li><a href="#">Módulos</a></li>
+                <li><a href="#">O Quark</a></li>
             </ul>
+        </nav>
+
+        <div class="acoes">
+            <a href="#" class="link-entrar">Entrar</a>
+            <a href="#" class="botao1">Começar</a>
         </div>
-        <div>
-            <button class="botao">Começar</button>
-        </div>
+
     </header>
     <main>
-        <h1>Entre na caixa. Explore o impossível</h1>
+        <section id="inicio">
+            <div>
+                <div>
+                    <h1>Entre na caixa. Explore o impossível</h1>
+                    <p>Simuladores, uma jornada passo a passo e um guia quântico que comemora cada conquista com você. Feito para quem está começando do zero — sem medo de teoria.</p>
+                    <button class="botao1"><a href="#">Botão</a></button>
+                    <button class="botao2"><a href="#">Botão</a></button>
+                    <p>textinho</p>
+                </div>
+                <div>
+                    <img src="#" alt="Mascote do quantum lab">
+                </div>
+            </div>
+        </section>
+        <section id="explorar">
+            <div>
+                <div class="titulo-h2">
+                    <h2>Por que explorar aqui?</h2>
+                    <p>Tudo pensado para transformar um assunto difícil em uma aventura curiosa.</p>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </section>
+        <section id="explicar">
+            <div class="titulo-h2">
+                <h2>De "o que é isso?" a "entendi tudo"</h2>
+                <p>Cada etapa te leva um pouco mais longe. Você começa curioso e termina dominando.</p>
+            </div>
+            <div class="trilha">
+
+            </div>
+        </section>
+        <section id="jornada">
+            <div class="titulo-h2">
+                <h2>Sua jornada começa por aqui</h2>
+                <p>Doze módulos que parecem fases de uma aventura</p>
+            </div>
+            <div class="card">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="botao2">
+                <a href="#">Ver todos os módulos</a>
+            </div>
+        </section>
+        <section id="mascote">
+            <div>
+                <div>
+                    <img src="#" alt="Mascote do Quantum LAB">
+                </div>
+                <div>
+                    <h2>Conheça o mascote</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus repellendus tenetur sed nobis nulla autem beatae earum quis accusantium tempore esse ex, eaque eos ea debitis voluptatum, a consectetur!</p>
+                </div>
+            </div>
+        </section>
+        <section id="pronto">
+            <div>
+
+            </div>
+        </section>
+
     </main>
     <footer>
-        
+        <div>
+
+        </div>
     </footer>
 </body>
 </html>

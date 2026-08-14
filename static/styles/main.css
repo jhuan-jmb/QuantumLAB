@@ -1,0 +1,21 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Viga&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'fredoka', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    color: #65758b;
+}
+.roxo{
+    color: #6b26d9;
+}
