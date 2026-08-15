@@ -112,7 +112,6 @@ header {
 .hero-conteudo {
     max-width: 1500px;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,17 +122,13 @@ header {
     max-width: 760px;
 }
 
-.badge {
+.badge p {
     display: inline-block;
-
     padding: 9px 18px;
     margin-bottom: 30px;
-
     border-radius: 30px;
-
     background-color: #f0e5ff;
     color: #812de8;
-
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -149,10 +144,8 @@ header {
 
 .hero-texto p {
     max-width: 700px;
-
     font-size: 1.25rem;
     line-height: 1.6;
-
     margin-bottom: 35px;
 }
 
@@ -186,7 +179,6 @@ header {
 
 .hero-info {
     color: #91a3bf;
-
     font-family: "Nunito", sans-serif;
     font-size: 0.95rem;
 }
@@ -218,7 +210,7 @@ header {
     position: absolute;
     inset: -15px;
     border-radius: 50%;
-    border: 2px dashed #e7d5ff;
+    border: 4px dashed #e7d5ff;
 }
 
 .circulo-mascote img {
