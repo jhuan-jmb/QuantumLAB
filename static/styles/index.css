@@ -220,3 +220,607 @@ header {
     border-radius: 50%;
     z-index: 1;
 }
+
+/* Section jornada*/
+#jornada {
+    padding: 80px 40px 100px;
+    background-color: #F3EEFF;
+    text-align: center;
+}
+
+#jornada .badge p {
+    margin-bottom: 20px;
+}
+
+.titulo-h2 h2 {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    color: #11182b;
+    margin-bottom: 12px;
+}
+
+.titulo-h2 p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+/* Estrutura da Trilha */
+.trilha-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.linha-trilha {
+    position: absolute;
+    top: 45px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background-color: #e9e2f8;
+    z-index: 1;
+}
+
+.trilha {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.passo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+/* Círculos e Ícones */
+.circulo-icone {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #f0e6ff;
+    box-shadow: 0 10px 25px rgba(139, 61, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.emoji-icone {
+    font-size: 2.2rem;
+}
+
+/* Badge numérico (1, 2, 3...) */
+.numero-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 26px;
+    height: 26px;
+    background-color: #8b3dff;
+    color: #ffffff;
+    border-radius: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(139, 61, 255, 0.4);
+}
+
+/* Textos da etapa */
+.passo-item h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #11182b;
+    margin-bottom: 8px;
+}
+
+.passo-item p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #718096;
+}
+
+/* Seção Mascote */
+#mascote {
+    padding: 100px 80px;
+    background-color: #fcfbfe;
+    display: flex;
+    justify-content: center;
+}
+
+.mascote-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* Card da Imagem */
+.mascote-card {
+    width: 420px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(139, 61, 255, 0.07);
+    border: 1px solid #f3ebff;
+    flex-shrink: 0;
+}
+
+.mascote-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Texto do Mascote */
+.mascote-texto {
+    max-width: 580px;
+}
+
+.mascote-texto .badge p {
+    margin-bottom: 20px;
+}
+
+.mascote-texto h2 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    color: #11182b;
+    margin-bottom: 20px;
+}
+
+.mascote-descricao {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #65758b;
+    margin-bottom: 35px;
+}
+
+/* Lista de Recursos com Ícones */
+.mascote-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mascote-lista li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    color: #40506a;
+    font-weight: 600;
+}
+
+.icone-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: #f3e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Seção Mascote */
+#mascote {
+    padding: 100px 80px;
+    background-color: #fcfbfe;
+    display: flex;
+    justify-content: center;
+}
+
+.mascote-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* Card da Imagem */
+.mascote-card {
+    width: 420px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(139, 61, 255, 0.07);
+    border: 1px solid #f3ebff;
+    flex-shrink: 0;
+}
+
+.mascote-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%; 
+}
+
+/* Texto do Mascote */
+.mascote-texto {
+    max-width: 580px;
+}
+
+.mascote-texto .badge p {
+    margin-bottom: 20px;
+}
+
+.mascote-texto h2 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    color: #11182b;
+    margin-bottom: 20px;
+}
+
+.mascote-descricao {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #65758b;
+    margin-bottom: 35px;
+}
+
+/* Lista de Recursos com Ícones */
+.mascote-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mascote-lista li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    color: #40506a;
+    font-weight: 600;
+}
+
+.icone-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: #f3e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Seção Sobre o Quantum Lab */
+#sobre {
+    padding: 100px 40px;
+    background: #F3EEFF;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#sobre .badge p {
+    margin-bottom: 24px;
+}
+
+#sobre .titulo-h2 h2 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    color: #11182b;
+    margin-bottom: 16px;
+}
+
+#sobre .titulo-h2 p {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+/* Grid de Círculos Roxos */
+.sobre-circulos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.circulo-card {
+    flex: 1;
+    min-width: 260px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Estrutura dos Círculos e Efeitos Visuais */
+.circulo-roxo-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo-roxo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a862ff 0%, #8b3dff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 30px rgba(139, 61, 255, 0.25);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Anel externo pulsante/decorativo */
+.circulo-roxo::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 2px dashed #d8b8ff;
+    opacity: 0.6;
+}
+
+.circulo-roxo.grande {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(135deg, #8b3dff 0%, #6f22e3 100%);
+    box-shadow: 0 16px 35px rgba(139, 61, 255, 0.35);
+}
+
+.circulo-card:hover .circulo-roxo {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(139, 61, 255, 0.4);
+}
+
+.circulo-icone {
+    font-size: 2.5rem;
+}
+
+.circulo-roxo.grande .circulo-icone {
+    font-size: 3rem;
+}
+
+/* Tipografia dos Cards */
+.circulo-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    color: #11182b;
+    margin-bottom: 10px;
+}
+
+.circulo-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #65758b;
+}
+
+/* Seção CTA Final */
+#cta-final {
+    padding: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-card {
+    max-width: 1300px;
+    width: 100%;
+    background: linear-gradient(135deg, #8b3dff 0%, #7425e6 100%);
+    border-radius: 40px;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(139, 61, 255, 0.2);
+}
+
+/* Efeito de círculos decorativos nos cantos */
+.cta-card::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.cta-card::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+/* Círculo do Mascote */
+.cta-mascote-circulo {
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.cta-mascote-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+/* Títulos e Textos */
+.cta-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 550px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+}
+
+/* Botões do CTA */
+.cta-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.botao-branco {
+    background-color: #ffffff;
+    color: #8b3dff;
+    padding: 15px 32px;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botao-branco:hover {
+    background-color: #f4f0ff;
+    transform: translateY(-2px);
+}
+
+.botao-borda {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 15px 32px;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.botao-borda:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Footer Reto com Degradê Roxo */
+.footer-simples {
+    width: 100%;
+    margin-top: 80px;
+    background: linear-gradient(180deg, #8b3dff 0%, #6f22e3 100%);
+    padding: 60px 80px 30px;
+    border-top: 1px solid #7928ed;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-col h4 {
+    font-family: 'Fredoka', sans-serif;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col a {
+    font-family: 'Nunito', sans-serif;
+    color: #e2cbff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+/* Divisória e Copyright */
+.footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-family: 'Nunito', sans-serif;
+    color: #d1b3ff;
+    font-size: 0.9rem;
+}
