@@ -100,8 +100,8 @@ header {
 }
 
 #inicio {
-    min-height: calc(100vh - 86px);
-    padding: 80px;
+    min-height: 900px;   
+    padding: 40px 80px;
     background: linear-gradient(
         180deg,
         #f8f6ff 0%,
@@ -823,4 +823,157 @@ header {
     font-family: 'Nunito', sans-serif;
     color: #d1b3ff;
     font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE DA PAGINA */
+
+/* =================================================================atia
+   RESPONSIVIDADE (MOBILE & TABLET)
+   ================================================================ */
+
+@media (max-width: 1024px) {
+    /* Header */
+    header {
+        padding: 20px 30px;
+    }
+
+    .links {
+        display: none; /* Pode ser substituído futuramente por um menu hambúrguer */
+    }
+
+    /* Seção Início (Hero) */
+    #inicio {
+        min-height: auto;
+        padding: 60px 30px;
+    }
+
+    .hero-conteudo {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-mascote {
+        width: 320px;
+        height: 320px;
+    }
+
+    /* Jornada / Trilha */
+    #jornada {
+        padding: 60px 20px;
+    }
+
+    .trilha {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .linha-trilha {
+        display: none; /* Oculta a linha horizontal no mobile para evitar quebras */
+    }
+
+    .passo-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Seção Mascote */
+    #mascote {
+        padding: 60px 20px;
+    }
+
+    .mascote-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .mascote-card {
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+    }
+
+    .mascote-texto {
+        max-width: 100%;
+    }
+
+    .mascote-lista li {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Seção Sobre */
+    #sobre {
+        padding: 60px 20px;
+    }
+
+    .sobre-circulos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circulo-card {
+        max-width: 100%;
+    }
+
+    /* CTA Final */
+    #cta-final {
+        padding: 40px 20px;
+    }
+
+    .cta-card {
+        padding: 50px 20px;
+        border-radius: 30px;
+    }
+
+    .cta-botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-botoes a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+    .footer-simples {
+        padding: 40px 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes finos para telas muito pequenas (smartphones compactos) */
+    header {
+        padding: 15px 20px;
+    }
+
+    .acoes .link-entrar {
+        display: none; /* Oculta o link entrar se faltar espaço, mantendo o botão principal */
+    }
+
+    .hero-texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-mascote {
+        width: 260px;
+        height: 260px;
+    }
+
+    .mascote-card {
+        width: 260px;
+        height: 260px;
+    }
 }
