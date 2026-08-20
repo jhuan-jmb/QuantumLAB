@@ -100,13 +100,10 @@ header {
 }
 
 #inicio {
+    margin-top: 50px;
     min-height: 900px;   
     padding: 40px 80px;
-    background: linear-gradient(
-        180deg,
-        #f8f6ff 0%,
-        #ffffff 100%
-    );
+    background: #ffffff;
 }
 
 .hero-conteudo {

@@ -12,14 +12,63 @@ html {
 }
 
 h1, h2{
-    font-family: 'fredoka', sans-serif;
-    font-weight: 600;
+  font-family: 'fredoka', sans-serif;
+  font-weight: 600;
 }
 
 p{
-    font-family: "Nunito", sans-serif;
-    color: #65758b;
+  font-family: "Nunito", sans-serif;
+  color: #65758b;
 }
 .roxo{
-    color: #6b26d9;
+  color: #6b26d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;          
+  width: 250px;          
+  background: linear-gradient(180deg, #8b3dff 0%, #6f22e3 100%);  
+  color: #ffffff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 0 20px 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.nav-links {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-lateral li{
+  margin: 10% 10%;
+  border: solid 1px none;
+  border-radius: 15px;
+  transition: background-color 1s ease-in-out;
+}
+
+.menu-lateral li:hover{
+  transform: scale(1.1); 
 }
