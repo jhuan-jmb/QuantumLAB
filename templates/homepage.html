@@ -3,31 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <meta name="view-transition" content="same-origin">
+    <title>QuantumLAB - Dashboard</title>
     <link rel="stylesheet" href="../static/styles/main.css">
     <link rel="stylesheet" href="../static/styles/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav class="menu-lateral">
             <div class="logo">
-                <h2>Quantum LAB</h2>
+                <div class="logo-icon">
+                    <i class="fa-solid fa-cat"></i>
+                </div>
+                <h2>Quantum<span>LAB</span></h2>
             </div>
+            
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+
             <ul class="nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Trilha</a></li>
-                <li><a href="#">Conteúdos</a></li>
-                <li><a href="#">Exercícios</a></li>
-                <li><a href="#">Laboratório</a></li>
-                <li><a href="#">Perfil</a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-route"></i> Trilha</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-book-open"></i> Conteúdos</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-bookmark"></i> Biblioteca</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-bolt"></i> Exercícios</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-flask"></i> Laboratório</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Quantum AI</a></li>
+                <li><a href="manutencao.html"><i class="fa-solid fa-user"></i> Perfil</a></li>
             </ul>
+
+            <div class="dark-mode-toggle">
+                <i class="fa-regular fa-moon"></i> Modo Escuro
+            </div>
         </nav>
     </header>
-    <main>
 
+    <main class="dashboard-container">
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Olá, <span class="highlight">User!</span></h1>
+                <p>
+                    Aprenda Física Quântica do zero por meio de uma jornada
+                    interativa baseada em ciência. Simuladores, quizzes e
+                    conteúdo feito sob medida.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary">Começar a explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn-secondary"><i class="fa-solid fa-flask"></i> Explorar Lab</button>
+                </div>
+
+                <!-- Barra de Progresso XP -->
+                <div class="level-card">
+                    <div class="level-info">
+                        <span>Nível 3</span>
+                        <span>150 / 200 XP</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cards-grid">
+            <div class="card card-purple">
+                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <span class="card-title">Conteúdos Disponíveis</span>
+                <span class="card-value">12</span>
+                <span class="card-subtitle">módulos completos</span>
+            </div>
+
+            <div class="card card-purple-light">
+                <div class="card-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <span class="card-title">Módulos Concluídos</span>
+                <span class="card-value">2</span>
+                <span class="card-subtitle">de 12 módulos</span>
+            </div>
+
+            <div class="card card-purple-light">
+                <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
+                <span class="card-title">Laboratórios</span>
+                <span class="card-value">5</span>
+                <span class="card-subtitle">simuladores ativos</span>
+            </div>
+
+            <div class="card card-purple-light">
+                <div class="card-icon"><i class="fa-regular fa-star"></i></div>
+                <span class="card-title">Seu Progresso</span>
+                <span class="card-value">17%</span>
+                <span class="card-subtitle">Nível 3 — 415 XP</span>
+            </div>
+        </section>
+
+        <!-- Métricas Secundárias -->
+        <section class="stats-grid">
+            <div class="stat-box">
+                <i class="fa-regular fa-star stat-icon"></i>
+                <div>
+                    <strong>3</strong>
+                    <p>Nível</p>
+                </div>
+            </div>
+
+            <div class="stat-box">
+                <i class="fa-solid fa-bolt stat-icon"></i>
+                <div>
+                    <strong>415</strong>
+                    <p>XP Total</p>
+                </div>
+            </div>
+
+            <div class="stat-box">
+                <i class="fa-solid fa-fire stat-icon"></i>
+                <div>
+                    <strong>1d</strong>
+                    <p>Sequência</p>
+                </div>
+            </div>
+
+            <div class="stat-box">
+                <i class="fa-solid fa-trophy stat-icon"></i>
+                <div>
+                    <strong>5</strong>
+                    <p>Conquistas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Call-To-Action (Estilo do Footer/Card Roxo) -->
+        <section class="cta-banner">
+            <div class="cta-content">
+                <h2>Pronto para avançar nos estudos?</h2>
+                <p>Crie simuladores personalizados e acesse o laboratório quântico a qualquer momento.</p>
+                <button class="btn-cta">Ir para o Lab</button>
+            </div>
+        </section>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>
