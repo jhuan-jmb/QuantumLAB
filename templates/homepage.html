@@ -3,148 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="view-transition" content="same-origin">
-    <title>QuantumLAB - Dashboard</title>
+    <title>Quantum LAB - homepage</title>
     <link rel="stylesheet" href="../static/styles/main.css">
     <link rel="stylesheet" href="../static/styles/homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+        <main id="aplicativo">
 
-    <header>
-        <nav class="menu-lateral">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-cat"></i>
-                </div>
-                <h2>Quantum<span>LAB</span></h2>
-            </div>
-            
-            <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Pesquisar...">
-            </div>
 
-            <ul class="nav-links">
-                <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Início</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-route"></i> Trilha</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-book-open"></i> Conteúdos</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-bookmark"></i> Biblioteca</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-bolt"></i> Exercícios</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-flask"></i> Laboratório</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Quantum AI</a></li>
-                <li><a href="manutencao.html"><i class="fa-solid fa-user"></i> Perfil</a></li>
-            </ul>
+        <!-- =========================================
+             CABEÇALHO
+        ========================================== -->
 
-            <div class="dark-mode-toggle">
-                <i class="fa-regular fa-moon"></i> Modo Escuro
-            </div>
-        </nav>
-    </header>
+        <header id="cabecalho">
 
-    <main class="dashboard-container">
+            <a href="#" class="logo">
+                <img
+                    src="../static/images/quark-homepage.png"
+                    alt="Logo QuantumLAB"
+                >
+            </a>
 
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Olá, <span class="highlight">User!</span></h1>
+        </header>
+
+
+
+        <!-- =========================================
+             SEÇÃO DE BOAS-VINDAS
+        ========================================== -->
+
+        <section id="boas-vindas" class="secao-boas-vindas">
+
+            <div class="texto-boas-vindas">
+
+                <h1>
+                    Olá,
+                    <span class="nome-usuario">User</span>
+                </h1>
+
                 <p>
-                    Aprenda Física Quântica do zero por meio de uma jornada
-                    interativa baseada em ciência. Simuladores, quizzes e
-                    conteúdo feito sob medida.
+                    Vamos observar o que vem a seguir?
                 </p>
-                
-                <div class="hero-buttons">
-                    <button class="btn-primary">Começar a explorar <i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="btn-secondary"><i class="fa-solid fa-flask"></i> Explorar Lab</button>
-                </div>
 
-                <!-- Barra de Progresso XP -->
-                <div class="level-card">
-                    <div class="level-info">
-                        <span>Nível 3</span>
-                        <span>150 / 200 XP</span>
+            </div>
+
+
+            <figure class="mascote-boas-vindas">
+
+                <img
+                    src="imagens/mascote-quantumlab.png"
+                    alt="Mascote do QuantumLAB"
+                >
+
+            </figure>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEÇÃO DO MÓDULO ATUAL
+        ========================================== -->
+
+        <section id="modulo-atual" class="secao-modulo-atual">
+
+
+            <article class="cartao-modulo">
+
+                <div class="informacoes-modulo">
+
+                    <header class="cabecalho-modulo">
+
+                        <h2>Módulo 1</h2>
+
+                        <h3>Capítulo 2</h3>
+
+                    </header>
+
+
+                    <div class="conteudo-modulo">
+
+                        <div class="descricao-modulo">
+
+                            <h4>
+                                Dualidade onda-partícula
+                            </h4>
+
+                            <p>
+                                70% concluído
+                            </p>
+
+                        </div>
+
+
+                        <a href="#" class="botao-retomar">
+                            Retomar
+                        </a>
+
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%;"></div>
+
+                </div>
+
+
+
+                <!-- Indicadores laterais do módulo -->
+
+                <nav
+                    class="indicadores-modulo"
+                    aria-label="Navegação entre módulos"
+                >
+
+                    <button
+                        class="indicador indicador-ativo"
+                        aria-label="Módulo 1"
+                    ></button>
+
+                    <button
+                        class="indicador indicador-ativo"
+                        aria-label="Módulo 2"
+                    ></button>
+
+                    <button
+                        class="indicador"
+                        aria-label="Módulo 3"
+                    ></button>
+
+                    <button
+                        class="indicador"
+                        aria-label="Módulo 4"
+                    ></button>
+
+                    <button
+                        class="indicador"
+                        aria-label="Módulo 5"
+                    ></button>
+
+                </nav>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEÇÃO DE EXPERIÊNCIA / XP
+        ========================================== -->
+
+        <section id="experiencia" class="secao-experiencia">
+
+            <div class="barra-experiencia">
+
+                <span class="titulo-experiencia">
+                    XP
+                </span>
+
+
+                <div class="progresso-experiencia">
+
+                    <progress
+                        class="barra-progresso-xp"
+                        value="60"
+                        max="100"
+                    >
+                        60 de 100 XP
+                    </progress>
+
+                    <span class="quantidade-xp">
+                        60 / 100
+                    </span>
+
+                </div>
+
+
+                <div class="nivel-usuario">
+
+                    <img
+                        src="imagens/icone-nivel.svg"
+                        alt=""
+                    >
+
+                    <span class="numero-nivel">
+                        2
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEÇÃO DA TRILHA DE APRENDIZADO
+        ========================================== -->
+
+        <section id="trilha-aprendizado" class="secao-trilha">
+
+
+            <header class="cabecalho-trilha">
+
+                <h2>
+                    Sua
+                    <span>trilha</span>
+                </h2>
+
+                <p>
+                    Acompanhe sua jornada
+                </p>
+
+            </header>
+
+
+
+            <div class="trilha">
+
+
+                <!-- Etapa 1 -->
+
+                <article class="etapa-trilha etapa-iniciar">
+
+                    <div class="circulo-etapa">
+
+                        <img
+                            src="imagens/icone-bandeira.svg"
+                            alt=""
+                        >
+
                     </div>
-                </div>
+
+                    <h3>
+                        Iniciar
+                    </h3>
+
+                </article>
+
+
+
+                <!-- Etapa 2 -->
+
+                <article class="etapa-trilha etapa-aprender">
+
+                    <h3>
+                        Aprender
+                    </h3>
+
+                    <div class="circulo-etapa">
+
+                        <img
+                            src="imagens/icone-livro.svg"
+                            alt=""
+                        >
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Etapa 3 -->
+
+                <article class="etapa-trilha etapa-fixar">
+
+                    <div class="marcador-posicao">
+
+                        <img
+                            src="imagens/icone-bandeira-azul.svg"
+                            alt="Etapa atual"
+                        >
+
+                    </div>
+
+
+                    <div class="circulo-etapa">
+
+                        <img
+                            src="imagens/icone-quebra-cabeca.svg"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <h3>
+                        Fixar
+                    </h3>
+
+                </article>
+
+
+
+                <!-- Etapa 4 -->
+
+                <article class="etapa-trilha etapa-experimentar">
+
+                    <h3>
+                        Experimentar
+                    </h3>
+
+                    <div class="circulo-etapa">
+
+                        <img
+                            src="imagens/icone-atomo.svg"
+                            alt=""
+                        >
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Etapa 5 -->
+
+                <article class="etapa-trilha etapa-concluir">
+
+                    <div class="circulo-etapa">
+
+                        <img
+                            src="imagens/icone-trofeu.svg"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <h3>
+                        Concluir
+                    </h3>
+
+                </article>
+
+
             </div>
 
         </section>
 
-        <section class="cards-grid">
-            <div class="card card-purple">
-                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
-                <span class="card-title">Conteúdos Disponíveis</span>
-                <span class="card-value">12</span>
-                <span class="card-subtitle">módulos completos</span>
-            </div>
 
-            <div class="card card-purple-light">
-                <div class="card-icon"><i class="fa-solid fa-circle-check"></i></div>
-                <span class="card-title">Módulos Concluídos</span>
-                <span class="card-value">2</span>
-                <span class="card-subtitle">de 12 módulos</span>
-            </div>
 
-            <div class="card card-purple-light">
-                <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
-                <span class="card-title">Laboratórios</span>
-                <span class="card-value">5</span>
-                <span class="card-subtitle">simuladores ativos</span>
-            </div>
+        <!-- =========================================
+             NAVEGAÇÃO INFERIOR
+        ========================================== -->
 
-            <div class="card card-purple-light">
-                <div class="card-icon"><i class="fa-regular fa-star"></i></div>
-                <span class="card-title">Seu Progresso</span>
-                <span class="card-value">17%</span>
-                <span class="card-subtitle">Nível 3 — 415 XP</span>
-            </div>
-        </section>
+        <nav
+            id="navegacao-inferior"
+            class="menu-inferior"
+            aria-label="Menu principal"
+        >
 
-        <!-- Métricas Secundárias -->
-        <section class="stats-grid">
-            <div class="stat-box">
-                <i class="fa-regular fa-star stat-icon"></i>
-                <div>
-                    <strong>3</strong>
-                    <p>Nível</p>
-                </div>
-            </div>
 
-            <div class="stat-box">
-                <i class="fa-solid fa-bolt stat-icon"></i>
-                <div>
-                    <strong>415</strong>
-                    <p>XP Total</p>
-                </div>
-            </div>
+            <a
+                href="#"
+                class="item-menu"
+                aria-label="Trilha de aprendizado"
+            >
 
-            <div class="stat-box">
-                <i class="fa-solid fa-fire stat-icon"></i>
-                <div>
-                    <strong>1d</strong>
-                    <p>Sequência</p>
-                </div>
-            </div>
+                <img
+                    src="imagens/icone-livro-menu.svg"
+                    alt=""
+                >
 
-            <div class="stat-box">
-                <i class="fa-solid fa-trophy stat-icon"></i>
-                <div>
-                    <strong>5</strong>
-                    <p>Conquistas</p>
-                </div>
-            </div>
-        </section>
+            </a>
 
-        <!-- Banner Call-To-Action (Estilo do Footer/Card Roxo) -->
-        <section class="cta-banner">
-            <div class="cta-content">
-                <h2>Pronto para avançar nos estudos?</h2>
-                <p>Crie simuladores personalizados e acesse o laboratório quântico a qualquer momento.</p>
-                <button class="btn-cta">Ir para o Lab</button>
-            </div>
-        </section>
+
+
+            <a
+                href="#"
+                class="item-menu"
+                aria-label="Atividades"
+            >
+
+                <img
+                    src="imagens/icone-lista.svg"
+                    alt=""
+                >
+
+            </a>
+
+            <a
+                href="#"
+                class="item-menu item-menu-ativo"
+                aria-label="Página inicial"
+                aria-current="page"
+            >
+
+                <img
+                    src="imagens/icone-inicio.svg"
+                    alt=""
+                >
+
+            </a>
+
+            <a
+                href="#"
+                class="item-menu"
+                aria-label="Laboratório"
+            >
+
+                <img
+                    src="imagens/icone-mapa.svg"
+                    alt=""
+                >
+
+            </a>
+
+            <a
+                href="#"
+                class="item-menu"
+                aria-label="Perfil"
+            >
+
+                <img src="imagens/icone-perfil.svg" alt="" >
+
+            </a>
+
+        </nav>
+
     </main>
+
 </body>
 </html>

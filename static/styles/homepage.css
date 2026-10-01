@@ -6,256 +6,727 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffffff;
-    font-family: 'Nunito', sans-serif;
-    color: #1a1a1a;
-    display: flex;
+:root {
+    --fundo: #16001f;
+
+    --roxo-principal: #8b2cff;
+    --roxo-claro: #9b3cff;
+    --roxo-escuro: #7019dc;
+
+    --azul-destaque: #18cfe5;
+
+    --amarelo-xp: #ffd52f;
+
+    --branco: #ffffff;
+    --cinza-claro: #cdb4e7;
 }
 
-main.dashboard-container {
-    margin-left: 250px;
-    padding: 40px 60px;
-    width: calc(100% - 250px);
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #0d0012;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: var(--branco);
+}
+
+
+/* ==================================================
+   APLICATIVO
+   Tela base: 1080 x 2400
+================================================== */
+
+#aplicativo {
+    width: 1080px;
+    min-height: 2400px;
+
     display: flex;
     flex-direction: column;
-    gap: 36px;
-}
 
-/* --- Hero Section --- */
-.hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    background-color: var(--fundo);
 
-.hero-content {
-    max-width: 540px;
-}
+    position: relative;
 
-.badge {
-    background-color: #f0e6ff;
-    color: #7b2cbf;
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 6px 16px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.hero-content h1 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 3.2rem;
-    line-height: 1.1;
-    color: #0f172a;
-    margin-bottom: 16px;
-}
-
-.hero-content .highlight {
-    color: #6b26d9;
-}
-
-.hero-content p {
-    color: #64748b;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 24px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 28px;
-}
-
-.btn-primary {
-    background-color: #6b26d9;;
-    color: #ffffff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(123, 44, 191, 0.3);
-    transition: transform 0.2s, background-color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-primary:hover {
-    background-color: #6c22d6;
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    color: #334155;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-secondary:hover {
-    background-color: #f8fafc;
-}
-
-/* Barra XP */
-.level-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 16px 20px;
-}
-
-.level-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #475569;
-    margin-bottom: 8px;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #f1f5f9;
-    border-radius: 10px;
     overflow: hidden;
 }
 
-.progress-fill {
-    height: 100%;
-    background: #eab308;
-    border-radius: 10px;
+
+/* ==================================================
+   1. CABEÇALHO
+================================================== */
+
+#cabecalho {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 95px 30px 0 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 240px;
+    height: auto;
+
+    display: block;
 }
 
 
-/* --- Cards de Módulos --- */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+/* ==================================================
+   2. BOAS-VINDAS
+================================================== */
+
+#boas-vindas {
+    width: 100%;
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 60px;
 }
 
-.card {
-    background: #ffffff;
-    border: 1px solid #f1f5f9;
-    border-radius: 20px;
-    padding: 22px;
+
+/* TEXTO */
+
+.texto-boas-vindas {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+
+    justify-content: center;
+
+    flex: 1;
 }
 
-.card-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
+.texto-boas-vindas h1 {
+    font-size: 78px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.nome-usuario {
+    color: var(--roxo-principal);
+}
+
+.texto-boas-vindas p {
+    margin-top: 14px;
+
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+/* MASCOTE */
+
+.mascote-boas-vindas {
+    width: 430px;
+    height: 350px;
+
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mascote-boas-vindas img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   3. MÓDULO ATUAL
+================================================== */
+
+#modulo-atual {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 25px;
+}
+
+.cartao-modulo {
+    width: 100%;
+    height: 380px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(
+        120deg,
+        #993cff,
+        #7c20f2
+    );
+
+    border-radius: 70px;
+
+    padding: 45px 30px 45px 50px;
+}
+
+
+/* ÁREA DAS INFORMAÇÕES */
+
+.informacoes-modulo {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    flex: 1;
+}
+
+
+/* CABEÇALHO DO CARD */
+
+.cabecalho-modulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-modulo h2 {
+    font-size: 64px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.cabecalho-modulo h3 {
+    margin-top: 10px;
+
+    font-size: 36px;
+
+    color: #d8b7ff;
+}
+
+
+/* PARTE DE BAIXO */
+
+.conteudo-modulo {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.descricao-modulo {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.descricao-modulo h4 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.descricao-modulo p {
+    margin-top: 7px;
+
+    font-size: 19px;
+}
+
+
+/* BOTÃO RETOMAR */
+
+.botao-retomar {
+    min-width: 250px;
+    height: 120px;
+
+    display: flex;
+
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
-    margin-bottom: 14px;
-    background-color: #f0e6ff;
-    color: #6b26d9;
+
+    background-color: var(--branco);
+
+    border-radius: 45px;
+
+    color: var(--roxo-principal);
+
+    font-size: 29px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
 }
 
-.card-title {
-    font-size: 0.85rem;
-    color: #64748b;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
 
-.card-value {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: #0f172a;
-    font-family: 'Fredoka', sans-serif;
-}
+/* ==================================================
+   INDICADORES DO MÓDULO
+================================================== */
 
-.card-subtitle {
-    font-size: 0.8rem;
-    color: #94a3b8;
-    margin-top: 2px;
-}
+.indicadores-modulo {
+    height: 100%;
 
-/* --- Stats Secundários --- */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.stat-box {
-    background: #ffffff;
-    border: 1px solid #f1f5f9;
-    border-radius: 16px;
-    padding: 16px;
     display: flex;
+    flex-direction: column;
+
+    justify-content: center;
     align-items: center;
-    gap: 14px;
+
+    gap: 18px;
+
+    margin-left: 25px;
 }
 
-.stat-icon {
-    font-size: 1.2rem;
-    color: #6b26d9;
-}
+.indicador {
+    width: 34px;
+    height: 34px;
 
-.stat-box strong {
-    font-size: 1.2rem;
-    color: #0f172a;
-    font-family: 'Fredoka', sans-serif;
-}
+    flex-shrink: 0;
 
-.stat-box p {
-    font-size: 0.8rem;
-    color: #64748b;
-}
-
-/* --- CTA Banner --- */
-.cta-banner {
-    background: linear-gradient(135deg, #8b3dff 0%, #7425e6 100%);
-    border-radius: 24px;
-    padding: 32px 40px;
-    color: #ffffff;
-    box-shadow: 0 8px 25px rgba(123, 44, 191, 0.25);
-}
-
-.cta-content h2 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-}
-
-.cta-content p {
-    font-size: 0.95rem;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-.btn-cta {
-    background-color: #ffffff;
-    color: #6b26d9;
     border: none;
-    padding: 10px 24px;
-    border-radius: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: transform 0.2s;
+    border-radius: 50%;
+
+    background-color: #bd7fff;
 }
 
-.btn-cta:hover {
-    transform: scale(1.03);
+.indicador-ativo {
+    background-color: var(--azul-destaque);
+}
+
+
+/* ==================================================
+   4. EXPERIÊNCIA / XP
+================================================== */
+
+#experiencia {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 95px 25px 35px;
+}
+
+.barra-experiencia {
+    width: 100%;
+    height: 92px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 12px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #9633ff,
+        #791de9
+    );
+
+    border-radius: 50px;
+}
+
+
+/* XP */
+
+.titulo-experiencia {
+    font-size: 44px;
+    font-weight: 800;
+}
+
+
+/* CONTAINER DA BARRA */
+
+.progresso-experiencia {
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    flex: 1;
+
+    position: relative;
+}
+
+
+/* BARRA HTML */
+
+.barra-progresso-xp {
+    width: 100%;
+    height: 48px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: none;
+}
+
+
+/* FUNDO */
+
+.barra-progresso-xp::-webkit-progress-bar {
+    background-color: white;
+
+    border-radius: 30px;
+}
+
+
+/* PROGRESSO */
+
+.barra-progresso-xp::-webkit-progress-value {
+    background-color: var(--amarelo-xp);
+
+    border-radius: 30px;
+}
+
+.barra-progresso-xp::-moz-progress-bar {
+    background-color: var(--amarelo-xp);
+
+    border-radius: 30px;
+}
+
+
+/* TEXTO SOBRE A BARRA */
+
+.quantidade-xp {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+/* NÍVEL */
+
+.nivel-usuario {
+    width: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.nivel-usuario img {
+    width: 55px;
+}
+
+.numero-nivel {
+    position: absolute;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* ==================================================
+   5. TRILHA DE APRENDIZADO
+================================================== */
+
+#trilha-aprendizado {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 65px;
+}
+
+
+/* TÍTULO DA TRILHA */
+
+.cabecalho-trilha {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.cabecalho-trilha h2 {
+    font-size: 57px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.cabecalho-trilha h2 span {
+    color: var(--roxo-principal);
+}
+
+.cabecalho-trilha p {
+    margin-top: 10px;
+
+    font-size: 25px;
+}
+
+
+/* ==================================================
+   ÁREA DA TRILHA
+================================================== */
+
+.trilha {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 50px;
+
+    position: relative;
+}
+
+
+/* LINHA PONTILHADA ATRÁS DAS BOLINHAS */
+
+.trilha::before {
+    content: "";
+
+    position: absolute;
+
+    left: 7%;
+    right: 7%;
+
+    top: 50%;
+
+    border-top: 7px dotted #a884bb;
+
+    z-index: 0;
+}
+
+
+/* ==================================================
+   ETAPAS DA TRILHA
+================================================== */
+
+.etapa-trilha {
+    width: 160px;
+    height: 270px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ALTERNA A ALTURA DAS ETAPAS */
+
+.etapa-iniciar,
+.etapa-fixar,
+.etapa-concluir {
+    transform: translateY(60px);
+}
+
+.etapa-aprender,
+.etapa-experimentar {
+    transform: translateY(-60px);
+}
+
+
+/* CÍRCULO */
+
+.circulo-etapa {
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #963cff,
+        #6515d3
+    );
+
+    box-shadow: 0 0 45px rgba(141, 44, 255, 0.6);
+}
+
+.circulo-etapa img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+}
+
+
+/* TÍTULOS */
+
+.etapa-trilha h3 {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin: 12px 0;
+}
+
+
+/* ==================================================
+   MARCADOR DA ETAPA ATUAL
+================================================== */
+
+.marcador-posicao {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    top: -35px;
+}
+
+.marcador-posicao img {
+    width: 100%;
+}
+
+
+/* ==================================================
+   6. MENU INFERIOR
+================================================== */
+
+#navegacao-inferior {
+    width: 1080px;
+    height: 280px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    padding: 50px 60px 0;
+
+    background: linear-gradient(
+        90deg,
+        #9938ff,
+        #7b20ef
+    );
+
+    border-top: 17px solid white;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+}
+
+
+/* CÍRCULO AZUL CENTRAL */
+
+#navegacao-inferior::before {
+    content: "";
+
+    width: 48px;
+    height: 48px;
+
+    background-color: var(--azul-destaque);
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: -32px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* ITEM DO MENU */
+
+.item-menu {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+}
+
+.item-menu img {
+    width: 95px;
+    height: 95px;
+
+    object-fit: contain;
+}
+
+
+/* ITEM SELECIONADO */
+
+.item-menu-ativo {
+    border: 4px solid white;
+
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 1080px) {
+
+    #aplicativo {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #navegacao-inferior {
+        width: 100%;
+    }
+
 }
