@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-QuantumLab</title>
+    <!-- main.css primeiro, para a página sobrescrever -->
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <link rel="stylesheet" href="../static/styles/homepage1.css">
+    <script src="https://kit.fontawesome.com/e1d8e01533.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="topo">
+        <span class="topo__logo">Quantum <b>LAB</b></span>
+        <div class="topo__texto">
+            <h1>Olá, <span>User</span></h1>
+            <p>Vamos observar o que vem a seguir?</p>
+        </div>
+        <img class="topo__mascote" src="../static/images/quark-homepage.png" alt="Mascote Quark">
+    </header>
+
+    <main>
+        <section class="modulo">
+            <h2>Módulo 1</h2>
+            <p class="modulo__capitulo">Capítulo 2</p>
+            <h3>Dualidade onda-partícula</h3>
+            <small>70% concluído</small>
+            <button type="button">Retomar</button>
+            <ol aria-label="Progresso do módulo">
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+            </ol>
+        </section>
+
+        <section class="XP">
+            <span>XP</span>
+            <div class="XP__barra">
+                <progress value="60" max="100">60%</progress>
+                <span class="XP__valor">60 / 100</span>
+            </div>
+            <i class="fa-solid fa-flask" aria-hidden="true"></i>
+        </section>
+
+        <section class="trilha">
+            <header class="trilha__header">
+                <h1>Sua <span>trilha</span></h1>
+                <p>Acompanhe sua jornada</p>
+            </header>
+
+            <div class="trilha__mapa">
+                <svg class="trilha__caminho" viewBox="0 0 100 170" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M10 115 C20 115,20 50,30 50 S40 115,50 115 S60 50,70 50 S80 115,90 115"/>
+                </svg>
+
+                <ol class="trilha__etapas">
+                    <li class="trilha__etapa">
+                        <i class="fa-solid fa-flag"></i>
+                        <h2>Iniciar</h2>
+                    </li>
+
+                    <li class="trilha__etapa">
+                        <i class="fa-solid fa-book"></i>
+                        <h2>Aprender</h2>
+                    </li>
+
+                    <li class="trilha__etapa trilha__etapa--atual">
+                        <i class="fa-solid fa-flag trilha__bandeira"></i>
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <h2>Fixar</h2>
+                    </li>
+
+                    <li class="trilha__etapa">
+                        <i class="fa-solid fa-atom"></i>
+                        <h2>Experimentar</h2>
+                    </li>
+
+                    <li class="trilha__etapa">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h2>Concluir</h2>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="#" aria-label="Aprender"><i class="fa-solid fa-book-open"></i></a>
+            <a href="#" aria-label="Atividades"><i class="fa-solid fa-list-check"></i></a>
+            <a href="#" class="navbar__centro" aria-label="Início" aria-current="page"><img src="../static/images/navbar.png" alt=""></a>
+            <a href="#" aria-label="Mapa"><i class="fa-solid fa-map-location-dot"></i></a>
+            <a href="#" aria-label="Perfil"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>

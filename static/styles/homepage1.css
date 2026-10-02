@@ -1,0 +1,322 @@
+/* ===== Tokens ===== */
+:root {
+  --bg: #180727;
+  --roxo: #6b26d9;
+  --roxo-claro: #8b3ff5;
+  --lilas: #b9a3ee;
+  --ciano: #22d3ee;
+  --amarelo: #fbbf24;
+  --branco: #ffffff;
+  --texto-suave: #d9c8ff;
+  --raio-card: 28px;
+}
+
+/* ===== Base ===== */
+body {
+  max-width: 430px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 16px 120px;
+  display: block;
+  background-color: var(--bg);
+  color: var(--branco);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ===== Cabeçalho ===== */
+.topo {
+  position: relative;
+  min-height: 150px;
+  padding-top: 16px;
+}
+
+.topo__logo {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--roxo);
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.topo__logo b {
+  margin-left: 2px;
+  padding: 0 4px;
+  border: 1px solid var(--branco);
+  border-radius: 4px;
+}
+
+.topo__texto {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+}
+
+.topo .topo__texto h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--branco);
+}
+
+.topo__texto h1 span {
+  color: var(--roxo-claro);
+}
+
+.topo .topo__texto p {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+}
+
+.topo__mascote {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  width: 140px;
+  height: auto;
+}
+
+/* ===== Card do módulo ===== */
+.modulo {
+  position: relative;
+  padding: 22px 20px;
+  border-radius: var(--raio-card);
+  background: linear-gradient(135deg, #5b1fc4 0%, #8b3ff5 100%);
+  box-shadow: 0 10px 30px rgba(107, 38, 217, 0.35);
+}
+
+.modulo h2 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.modulo .modulo__capitulo {
+  margin-top: 2px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--lilas);
+}
+
+.modulo h3 {
+  margin-top: 22px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.modulo small {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.65rem;
+  color: var(--texto-suave);
+}
+
+.modulo button {
+  position: absolute;
+  right: 46px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--branco);
+  color: var(--roxo);
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modulo button:focus-visible {
+  outline: 3px solid var(--ciano);
+  outline-offset: 3px;
+}
+
+/* bolinhas de progresso (a lista vira só pontos) */
+.modulo ol {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.modulo ol li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--lilas);
+  opacity: 0.6;
+  font-size: 0;       /* esconde o "..." */
+  color: transparent;
+}
+
+.modulo ol li:nth-child(-n + 2) {
+  background: var(--ciano);
+  opacity: 1;
+  box-shadow: 0 0 8px var(--ciano);
+}
+
+/* ===== XP ===== */
+.XP {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5b1fc4, #8b3ff5);
+}
+
+.XP > span:first-child {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.XP__barra {
+  position: relative;
+  flex: 1;
+  height: 18px;
+}
+
+.XP progress {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #3a1480;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.XP progress::-webkit-progress-bar {
+  background: #3a1480;
+}
+
+.XP progress::-webkit-progress-value {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f59e0b, var(--amarelo));
+}
+
+.XP progress::-moz-progress-bar {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f59e0b, var(--amarelo));
+}
+
+.XP__valor {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #3a1480;
+}
+
+.XP i {
+  font-size: 1.2rem;
+}
+
+/* ===== Trilha ===== */
+.trilha {
+  margin-top: 28px;
+}
+
+.trilha__header h1 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.trilha__header h1 span {
+  color: var(--roxo-claro);
+}
+
+.trilha .trilha__header p {
+  font-size: 0.75rem;
+  color: var(--lilas);
+}
+
+.trilha__mapa {
+  position: relative;
+  height: 170px;
+  margin-top: 16px;
+}
+
+.trilha__caminho {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trilha__caminho path {
+  fill: none;
+  stroke: var(--lilas);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+  vector-effect: non-scaling-stroke;
+}
+
+.trilha__etapas {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100%;
+  list-style: none;
+}
+
+.trilha__etapa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 89px;        /* etapas baixas */
+}
+
+.trilha__etapa:nth-child(even) {
+  margin-top: 0;           /* etapas altas: rótulo em cima */
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.trilha__etapa > i:not(.trilha__bandeira) {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--roxo);
+  font-size: 1.3rem;
+  color: var(--branco);
+}
+
+.trilha__etapa h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--branco);
+}
+
+.trilha__etapa--atual i.fa-puzzle-piece {
+  box-shadow: 0 0 22px 6px rgba(139, 63, 245, 0.7);
+}
+
+.trilha__bandeira {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: var(--ciano);
+}
